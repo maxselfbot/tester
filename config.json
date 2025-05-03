@@ -1,0 +1,14 @@
+{
+    "token": "YOUR_BOT_TOKEN_HERE",
+    "prefix": "!",
+    "allowed_users": [
+        "USER_ID_1",
+        "USER_ID_2"
+    ],
+    "copycat_users": [],
+    "auto_react_users": [],
+    "autoresponders": {
+        "paypal": "paypal.me/yourname",
+        "addy": "```your custom response here```"
+    }
+}
