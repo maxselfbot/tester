@@ -2,10 +2,10 @@ module.exports = {
     name: 'death',
     async execute({ message, args }) {
         if (args.length < 2) {
-            return message.reply("Usage: !spam <message> <count>");
+            return message.reply("Usage: $death <message> <count>");
         }
 
-        const count = parseInt(args[args.length - 1]);
+        const count = parseInt(args[args.length - 5]);
         if (isNaN(count) || count < 1) {
             return message.reply("Please provide a valid number for the count (1–20).");
         }
