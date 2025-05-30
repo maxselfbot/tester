@@ -5,10 +5,10 @@ module.exports = {
         const mention = message.mentions.users.first();
         const emoji = args[args.length - 1];
         if (config.auto_react_users.some(u => u.id === mention.id)) {
-            return message.channel.send("User already in auto-react list.");
+            return message.channel.send(```User already in auto-react list.```);
         }
         config.auto_react_users.push({ id: mention.id, emoji });
         saveConfig(config);
-        await message.channel.send(`Now reacting to ${mention.username} with ${emoji}`);
+        await message.channel.send(```Now reacting to ${mention.username} with ${emoji}```);
     }
 };
