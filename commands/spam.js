@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'spam',
+    name: 'death',
     async execute({ message, args }) {
         if (args.length < 2) {
             return message.reply("Usage: !spam <message> <count>");
