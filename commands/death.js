@@ -7,7 +7,7 @@ module.exports = {
 
         const count = parseInt(args[args.length - 5]);
         if (isNaN(count) || count < 1) {
-            return message.reply("Please provide a valid number for the count (1–20).");
+            return message.reply("Please provide a valid number for the count (5–20).");
         }
 
         const msg = args.slice(0, -1).join(" ");
